@@ -1,0 +1,157 @@
+{
+  "name": "Episode",
+  "type": "object",
+  "properties": {
+    "episode_number": {
+      "type": "number"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "idea",
+        "story_draft",
+        "story_approval",
+        "script_draft",
+        "script_approval",
+        "storyboard",
+        "asset_generation",
+        "voice_generation",
+        "assembly",
+        "qa",
+        "human_approval",
+        "ready_to_upload",
+        "uploading",
+        "scheduled",
+        "published",
+        "failed"
+      ],
+      "default": "idea"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "moral": {
+      "type": "string"
+    },
+    "values": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "target_age": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "duration_target": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "character_slugs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "story_concept": {
+      "type": "string"
+    },
+    "story_conflict": {
+      "type": "string"
+    },
+    "story_arc": {
+      "type": "string"
+    },
+    "story_ending": {
+      "type": "string"
+    },
+    "budget_max": {
+      "type": "number"
+    },
+    "total_cost": {
+      "type": "number"
+    },
+    "youtube_title": {
+      "type": "string"
+    },
+    "youtube_description": {
+      "type": "string"
+    },
+    "youtube_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "youtube_playlist": {
+      "type": "string"
+    },
+    "youtube_visibility": {
+      "type": "string"
+    },
+    "scheduled_at": {
+      "type": "string"
+    },
+    "youtube_video_id": {
+      "type": "string"
+    },
+    "thumbnail_url": {
+      "type": "string"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "render_project": {
+      "type": "string"
+    },
+    "approved_at": {
+      "type": "string"
+    },
+    "published_at": {
+      "type": "string"
+    },
+    "views": {
+      "type": "number"
+    },
+    "watch_time_hours": {
+      "type": "number"
+    },
+    "avg_view_duration": {
+      "type": "string"
+    },
+    "retention": {
+      "type": "number"
+    },
+    "impressions": {
+      "type": "number"
+    },
+    "ctr": {
+      "type": "number"
+    },
+    "subscribers_gained": {
+      "type": "number"
+    },
+    "likes": {
+      "type": "number"
+    },
+    "revenue": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

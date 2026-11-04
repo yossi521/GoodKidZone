@@ -1,0 +1,93 @@
+{
+  "name": "Scene",
+  "type": "object",
+  "properties": {
+    "episode_id": {
+      "type": "string"
+    },
+    "scene_number": {
+      "type": "number"
+    },
+    "duration": {
+      "type": "number"
+    },
+    "location": {
+      "type": "string"
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "action": {
+      "type": "string"
+    },
+    "narration": {
+      "type": "string"
+    },
+    "dialogue": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "character": {
+            "type": "string"
+          },
+          "line": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "emotion": {
+      "type": "string"
+    },
+    "camera": {
+      "type": "string"
+    },
+    "sfx": {
+      "type": "string"
+    },
+    "music": {
+      "type": "string"
+    },
+    "visual_prompt": {
+      "type": "string"
+    },
+    "negative_prompt": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "image_ready",
+        "video_ready",
+        "voice_ready",
+        "approved",
+        "failed"
+      ],
+      "default": "draft"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "voice_url": {
+      "type": "string"
+    },
+    "asset_version": {
+      "type": "number"
+    },
+    "qa_notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "episode_id",
+    "scene_number"
+  ]
+}

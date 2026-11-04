@@ -1,0 +1,66 @@
+{
+  "name": "Generation",
+  "type": "object",
+  "properties": {
+    "episode_id": {
+      "type": "string"
+    },
+    "scene_id": {
+      "type": "string"
+    },
+    "generation_type": {
+      "type": "string",
+      "enum": [
+        "story",
+        "script",
+        "image",
+        "video",
+        "voice",
+        "music",
+        "thumbnail",
+        "metadata"
+      ]
+    },
+    "provider": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "prompt": {
+      "type": "string"
+    },
+    "credits_used": {
+      "type": "number"
+    },
+    "estimated_cost": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "queued",
+        "running",
+        "completed",
+        "failed"
+      ],
+      "default": "completed"
+    },
+    "attempt": {
+      "type": "number"
+    },
+    "external_job_id": {
+      "type": "string"
+    },
+    "completed_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "episode_id",
+    "generation_type"
+  ]
+}

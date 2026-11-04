@@ -1,0 +1,110 @@
+{
+  "name": "Character",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "role_title": {
+      "type": "string"
+    },
+    "story_role": {
+      "type": "string",
+      "enum": [
+        "Does",
+        "Feels",
+        "Thinks"
+      ]
+    },
+    "bio": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "personality": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "weakness": {
+      "type": "string"
+    },
+    "appearance": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "values": {
+      "type": "string"
+    },
+    "loves": {
+      "type": "string"
+    },
+    "height_relative": {
+      "type": "string"
+    },
+    "age_impression": {
+      "type": "string"
+    },
+    "voice_id": {
+      "type": "string"
+    },
+    "voice_description": {
+      "type": "string"
+    },
+    "expressions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "poses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "emotions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "colors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "accent_color": {
+      "type": "string"
+    },
+    "bg_color": {
+      "type": "string"
+    },
+    "negative_prompt": {
+      "type": "string"
+    },
+    "prompt_template": {
+      "type": "string"
+    },
+    "reference_images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approved_reference": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

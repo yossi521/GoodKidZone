@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Varela+Round&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 100% 98%;
+    --foreground: 222 45% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 45% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 45% 18%;
+    --primary: 211 80% 42%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 199 90% 94%;
+    --secondary-foreground: 211 80% 30%;
+    --muted: 45 45% 94%;
+    --muted-foreground: 222 20% 46%;
+    --accent: 45 100% 51%;
+    --accent-foreground: 222 45% 18%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 45 30% 88%;
+    --input: 45 30% 88%;
+    --ring: 211 80% 42%;
+    --chart-1: 211 80% 42%;
+    --chart-2: 199 98% 48%;
+    --chart-3: 45 100% 51%;
+    --chart-4: 340 82% 52%;
+    --chart-5: 145 63% 42%;
+    --radius: 1rem;
+    --brand-yellow: 45 100% 51%;
+    --brand-pink: 340 82% 52%;
+    --brand-blue: 199 98% 48%;
+    --brand-deep: 211 80% 42%;
+    --brand-cream: 45 100% 98%;
+    --brand-mint: 174 60% 90%;
+    --brand-lilac: 265 60% 92%;
+    --font-heading: 'Varela Round', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Varela Round', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sidebar-background: 211 80% 42%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 45 100% 51%;
+    --sidebar-primary-foreground: 222 45% 18%;
+    --sidebar-accent: 211 70% 52%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 211 60% 52%;
+    --sidebar-ring: 45 100% 51%;
+  }
+
+  .dark {
+    --background: 222 45% 10%;
+    --foreground: 45 40% 96%;
+    --card: 222 40% 14%;
+    --card-foreground: 45 40% 96%;
+    --popover: 222 40% 14%;
+    --popover-foreground: 45 40% 96%;
+    --primary: 199 98% 55%;
+    --primary-foreground: 222 45% 10%;
+    --secondary: 222 35% 20%;
+    --secondary-foreground: 45 40% 96%;
+    --muted: 222 35% 20%;
+    --muted-foreground: 45 20% 70%;
+    --accent: 45 100% 55%;
+    --accent-foreground: 222 45% 10%;
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 222 30% 24%;
+    --input: 222 30% 24%;
+    --ring: 199 98% 55%;
+    --chart-1: 199 98% 55%;
+    --chart-2: 45 100% 55%;
+    --chart-3: 340 82% 62%;
+    --chart-4: 265 60% 70%;
+    --chart-5: 145 63% 55%;
+    --sidebar-background: 222 45% 12%;
+    --sidebar-foreground: 45 40% 96%;
+    --sidebar-primary: 45 100% 55%;
+    --sidebar-primary-foreground: 222 45% 10%;
+    --sidebar-accent: 222 35% 20%;
+    --sidebar-accent-foreground: 45 40% 96%;
+    --sidebar-border: 222 30% 24%;
+    --sidebar-ring: 45 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-heading;
+  }
+}
